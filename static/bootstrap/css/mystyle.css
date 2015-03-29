@@ -1,0 +1,20 @@
+#banner {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px; 
+}
+
+#navbar {
+    background: black;
+    position: absolute;
+	width: 15%;
+    height: 100%;
+}
+
+.nav_elem{
+color : white;
+font-size: 130%;
+}
+
+

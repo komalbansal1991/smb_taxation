@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/mystyle.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
+	
+	<!--<link rel="stylesheet" type="text/css" href="{% static 'font-awesome-4.2.0/css/font-awesome.min.css' %}" />-->
+	{% block styles %}
+	{% endblock styles %}
+	<title>{% block title %}Seamless Accounting{% endblock %}</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div id="banner">
+			<h1>Welcome to Seamless Accounting Solutions</h1>
+		</div>
+		<div id="navbar">
+		
+			<ul class="nav nav-pills nav-stacked">
+				<li class="btn btn-primary"><a href="{% url 'Seamless_Accounting:home' %}" class="nav_elem">Home</a></li>
+				<li class="btn btn-primary"><a href="{% url 'Seamless_Accounting:upload_inventory' %}" class="nav_elem">Upload Inventory</a></li>
+				<li class="btn btn-primary"><a href="{% url 'Seamless_Accounting:billing' %}" class="nav_elem">Billing</a></li>
+				<li class="btn btn-primary"><a href="{% url 'Seamless_Accounting:view_profit' %}" class="nav_elem">View Profit</a></li>
+				<li class="btn btn-primary"><a href="{% url 'Seamless_Accounting:upload_expenditure' %}" class="nav_elem">Upload Expenditure</a></li>
+				<li class="btn btn-primary"><a href="{% url 'Seamless_Accounting:upload_savings' %}" class="nav_elem">Upload Savings</a></li>
+				<li class="btn btn-primary"><a href="{% url 'Seamless_Accounting:calculate_tax' %}" class="nav_elem">Calculate Tax</a></li>
+			</ul>
+		
+		</div>
+	</div>
+</body>
+</html>
+
